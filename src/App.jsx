@@ -8,15 +8,22 @@ import { Contact } from "@/sections/Contact";
 import { Footer } from "@/layout/Footer";
 import  Toggle  from "@/components/Toggle"; 
 import { ThemeContext } from "@/Context";
+import { useTranslation } from "react-i18next";
 
 function App() { 
+  const {t, i18n}= useTranslation()
+
   const theme = useContext(ThemeContext);
   
   
   const lightMode = !theme.state.lightMode; 
 
   return (
+
+
+
     <div
+    
       style={{
        
         backgroundColor: lightMode ?   "#f3d2cf" : "#0f1418",
@@ -24,7 +31,9 @@ function App() {
         
       }}
       className="min-h-screen overflow-x-hidden"
+
     >
+      
       <Navbar />
       <main>
         <Toggle />

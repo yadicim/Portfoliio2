@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'; 
 import { useContext } from "react";
 import { ThemeContext } from "@/Context"; 
+import { useTranslation } from "react-i18next";
 
 
 
@@ -21,6 +22,10 @@ const navLinks=[
 
 ];
 export const Navbar = ()=>{
+    const {t, i18n}= useTranslation()
+    const clickHandle = lang => {
+        i18n.changeLanguage(lang)
+    }
     const [search, setSearch] = useState("");
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,6 +44,8 @@ export const Navbar = ()=>{
     },[]);
 
     return (
+
+
     <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
     isScrolled ? "glass-strong py-3" : " bg-transparent py-5 "  } z-50 `}>
         <nav className="container mx-auto px-6 flex items-center justify-between">
@@ -47,6 +54,17 @@ export const Navbar = ()=>{
             <a href="#" className="ml-10 text-xl font-bold tracking-tight hover:text-(--color-primary)">
                 Yadigar Arslan <span className="text-primary"></span>
             </a>
+
+            {/*LANGUAGE BUTTONS*/}
+            < Button onClick={()=> clickHandle ('en') }>ENGLIISH</Button>
+            <Button onClick={()=> clickHandle ('fi') }>SUOMI</Button>
+            <p>aktif dil: {i18n.language}</p>
+            <h3>{t('welcome')}</h3>
+
+        
+            <div>
+
+            </div>
 
             {/* NAVIGATION LINKS */}
             <div className="hidden md:flex items-center  gap-5">
