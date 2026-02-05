@@ -73,7 +73,7 @@ export const Contact = ()=>{
             },
             publicKey);
 
-            setSubsmitStatus({
+            setSubmitStatus({
                 type: "success",
                 message:t('contact.success_msg'),
             });
