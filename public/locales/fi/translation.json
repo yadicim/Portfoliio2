@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "title_1": "Ohjelmistokehittäjä-",
+    "title_1_1": "opiskelija",
+    "title_2": "Koodaa ",
+    "title_2_2": "selkeästi.",
+    "title_3": "Rakenna ",
+    "title_4": "tarkasti.",
+    "description": "Hei, olen Yadigar, ohjelmistokehittäjäksi opiskeleva, joka arvostaa selkeyttä, tarkkuutta ja jatkuvaa oppimista. Minulla on kokemusta HTML-, CSS-, JavaScript-, React- ja C#-teknologioista, ja nautin ideoiden muuttamisesta yksinkertaisiksi ja toimiviksi digitaalisiksi kokemuksiksi.",
+    "contact_me": "Ota yhteyttä",
+    "download_cv": "Lataa CV",
+    "follow_me": "Seuraa minua:",
+    "available": "Vapaana työtehtäviin",
+    "law": "Tieteidenvälinen tausta oikeustieteessä ja",
+    "software": "ohjelmistokehityksessä"
+  },
+
+  "navbar": {
+    "about": "Minusta",
+    "projects": "Projektit",
+    "experience": "Kokemus",
+    "search": "Etsi...",
+    "contact_me": "Ota yhteyttä"
+},
+
+
+"footer": {
+    "about": "Minusta",
+    "projects": "Projektit",
+    "experience": "Kokemus",
+    "contact": "Ota yhteyttä",
+    "rights": " Yadigar Arslan. Kaikki oikeudet pidätetään."
+},
+
+
+  "about": {
+    "badge": "Minusta",
+    "title_main": "Sillan rakentaminen oikeustieteen ja teknologian välille",
+    "title_highlight": "koodin avulla.",
+    "p1": "Tulen oikeustieteellisestä taustasta ja olen parhaillaan siirtymässä ohjelmistokehitykseen, jossa yhdistän analyyttisen ajattelun tekniseen ongelmanratkaisuun. Kiinnostukseni ohjelmointiin kasvoi halusta ymmärtää, miten digitaaliset järjestelmät rakennetaan ja miten logiikka muuttuu todellisiksi, käyttökelpoisiksi tuotteiksi.",
+    "p2": "Minulla on kokemusta HTML-, CSS-, JavaScript-, React-, Bootstrap-, jQuery-, C-, Python-, PHP- ja SQL-teknologioista. Nautin selkeän, jäsennellyn koodin kirjoittamisesta ja sellaisten sovellusten rakentamisesta, jotka ovat käytännöllisiä, ylläpidettäviä ja keskittyvät todellisiin tarpeisiin monimutkaisuuden sijaan.",
+    "p3": "Kehitystyön ulkopuolella keskityn taitojeni parantamiseen jatkuvan oppimisen, käytännön projektien ja ohjelmistokehityksen eri osa-alueiden tutkimisen kautta vahvistaakseni teknistä perustaani.",
+    "quote": "Keskityn luomaan hyvin jäsenneltyjä ja luotettavia digitaalisia ratkaisuja, joita muokkaavat analyyttinen ajattelu ja huomio yksityiskohtiin.",
+    "highlights": {
+      "title_1": "Selkeä ja jäsennelty koodi",
+      "desc_1": "Koodi, joka noudattaa loogista rakennetta, parantaa luettavuutta ja tukee pitkän aikavälin ylläpidettävyyttä.",
+      "title_2": "Yksinkertaiset ja tehokkaat ratkaisut",
+      "desc_2": "Jäsennelty ja analyyttinen lähestymistapa monimutkaisten ongelmien purkamiseen ja käytännöllisten, tehokkaiden ratkaisujen löytämiseen.",
+      "title_3": "Ongelmanratkaisukyky",
+      "desc_3": "Ajattelutapa, jossa analysoidaan vaatimuksia, rakennetaan loogisia rakenteita ja luodaan skaalautuvia sekä ylläpidettäviä ratkaisuja.",
+      "title_4": "Tehokas yhteistyö",
+      "desc_4": "Organisoitu ja kunnioittava lähestymistapa tiimityöhön, jota tukee selkeä viestintä ja keskinäinen ymmärrys."
+        }
+  
+    },
+
+    "contact": {
+    "success_msg": "Viesti lähetetty onnistuneesti! Palaan asiaan pian.",
+    "error_msg": "Viestin lähettäminen epäonnistui. Yritä myöhemmin uudelleen.",
+    "header_1": "Ota yhteyttä",
+    "header_2": "Rakennetaan jotain",
+    "header_3": " hienoa yhdessä.",
+    "header_p": "Onko sinulla idea tai projekti mielessä? Ota rohkeasti yhteyttä – olen avoin oppimismahdollisuuksille, yhteistyölle ja uusille työtarjouksille.",
+    "name": "Nimi",
+    "y_name": "Kirjoita nimesi",
+    "email": "Sähköposti",
+    "message": "Viesti",
+    "sending": "Lähetetään...",
+    "send": "Lähetä viesti",
+    "info_title": "Yhteystiedot",
+    "card_title": "Tavoitettavuus",
+    "card_p": "Olen tällä hetkellä avoin uusille mahdollisuuksille ja oppimispainotteisille projekteille. Olipa kyseessä junior-tason rooli, harjoittelu tai yhteistyö, ota yhteyttä.",
+    "info": {
+        "label_1": "Sähköposti",
+        "label_2": "Puhelin",
+        "label_3": "Sijainti"
+        }
+    },
+
+    "exp": {
+    "period_1": "Huhti 2025 – Kesä 2025",
+    "role_1": "Koodausohjaaja (harjoittelija)",
+    "company_1": "Kodarit, Koodikaverit Oy",
+    "desc_1": "Ohjasin lapsia koodauksen parissa käyttäen Unitya, Scratchia, JavaScriptia ja Pythonia. Avustin oppijoita ohjelmointitehtävissä ja kerrytin käytännön kokemusta ohjelmointikasvatuksesta sekä ikätasoisesta opetuksesta.",
+    
+    "period_2": "Huhti 2023 – Kesä 2023",
+    "role_2": "Ohjelmointiharjoittelija",
+    "company_2": "Diginikkari, BusinessAsema, Oulu",
+    "desc_2": "Suoritettu harjoittelu, jossa perehdyin Python-ohjelmointiin erilaisten harjoitusten kautta. Sain kokemusta myös 3D-tulostuksesta ja laserleikkauksesta, yhdistäen ohjelmistotaidot digitaaliseen valmistukseen.",
+    
+    "period_3": "Maalis 2018 – Huhti 2019",
+    "role_3": "Patenttirikkomusten oikeudellinen neuvonantaja",
+    "company_3": "Yalciner Patent, Turkki",
+    "desc_3": "Tarjosin oikeudellista neuvontaa patenttiloukkaustutkimuksissa. Ydinosaamiseeni kuuluivat lainsäädännön hallinta, analyyttinen ajattelu, johtamistaidot sekä luovuus haastavien oikeustapausten ratkaisemisessa.",
+    
+    "period_4": "Heinä 2016 – Helmi 2017",
+    "role_4": "Esittelevä tuomari",
+    "company_4": "Korkein oikeus, 4. siviilioikeudellinen jaosto, Turkki",
+    "desc_4": "Tutkin siviilioikeudellisia vahingonkorvausasioita, analysoin oikeudellisia tietojärjestelmiä ja valmistelin ratkaisuehdotuksia ylemmälle oikeusasteelle. Kehitin vahvoja analyyttisia ja ajanhallinnan taitoja.",
+    
+    "period_5": "Maalis 2015 – Heinä 2016",
+    "role_5": "Tuomari",
+    "company_5": "Hendek Court, Turkki",
+    "desc_5": "Toimin siviilioikeuden tuomarina käsitellen korvaus-, avioero- ve kiinteistöasioita. Valmistelin kirjallisia päätöksiä ja perusteluja, mikä vahvisti ongelmanratkaisu- ja vuorovaikutustaitojani.",
+    
+    "period_6": "Marras 2013 – Maalis 2015",
+    "role_6": "Tuomariharjoittelija",
+    "company_6": "Ankara Court, Turkki",
+    "desc_6": "Suoritettu laaja-alainen harjoittelu rikos- ja siviilioikeuden parissa. Sain käytännön kokemusta tuomioistuimen toiminnasta ja kehitin tarkkuutta sekä organisointikykyä vaativissa ympäristöissä.",
+    
+    "period_7": "Elo 2012 - Marras 2013",
+    "role_7": "Tutkimusavustaja",
+    "company_7": "Afyon Kocatepe University, Oikeustieteellinen tiedekunta, Turkki",
+    "desc_7": "Avustin oikeustieteellisessä tutkimuksessa hyödyntäen tilastollisia ja laadullisia analyyseja. Vastasin tutkimusdatan hallinnasta ja visualisoinnista akateemisia julkaisuja varten.",
+
+    "header_1": "Urapolku",
+    "header_2": "Kokemusta, joka",
+    "header_3": "kertoo tarinan.",
+    "header_p": "Monialainen ammatillinen matkani, jossa yhdistyvät oikeustiede ja ohjelmistokehitys."
+    }
+
+
+
+}

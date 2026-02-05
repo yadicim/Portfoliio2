@@ -1,0 +1,130 @@
+{
+  "hero": {
+    "title_1": "Software Developer ",
+    "title_1_1": "Student",
+    "title_2": " Code with",
+    "title_2_2": "Clarity.",
+    "title_3": "Build with",
+    "title_4": "Precision.",
+    "description":"Hi, I'm Yadigar, a software developer in training who values clarity, precision, and continuous learning. I have experience with HTML, CSS, JavaScript, React                         and C#, and I enjoy turning ideas into simple and effective digital experiences.",
+    "contact_me": "Contact Me",
+    "download_cv": "Download CV",
+    "follow_me": "Follow me:",
+    "available": "Available for Work",
+    "law" : "Interdisciplinary Background in Law and",
+    "software" : "Software Development"
+  },
+
+
+  "navbar" : {
+    "about" : "About",
+    "projects" : "Projects",
+    "experience" : "Experience",
+    "search" : " Search...",
+    "contact_me": "Contact Me"
+
+  },
+
+  "footer" :{
+    "about" : "About",
+    "projects" : "Projects",
+    "experience" : "Experience",
+    "contact": "Contact",
+    "rights" : " Yadigar Arslan. All rights reserved."
+    
+
+  },
+ 
+  "about": {
+    "badge": "About Me",
+    "title_main": "Bridging Law and Technology",
+    "title_highlight": "through code.",
+    "p1": "I come from a law background and am currently transitioning into software development, where I combine analytical thinking with technical problem-solving. My interest in programming grew from a desire to understand how digital systems are built and how logic turns into real, usable products.",
+    "p2": "I have experience working with HTML, CSS, JavaScript, React, Bootstrap, jQuery, C, Python, PHP, and SQL. I enjoy writing clear, structured code and building applications that are practical, maintainable, and focused on real needs rather than complexity for its own sake.",
+    "p3": "Outside of development, I focus on improving my skills through continuous learning, hands-on projects, and exploring different areas of software development to strengthen my technical foundation.",
+    "quote": "My focus is on creating well-structured and reliable digital solutions, shaped by analytical thinking and attention to detail.",
+    "highlights": {
+      "title_1": "Clean & Structured Code",
+      "desc_1": "Code that follows a logical structure, improves readability, and supports long-term maintainability.",
+      "title_2": "Simple & Effective Solutions",
+      "desc_2": "A structured and analytical approach to breaking down complex problems and finding practical, effective solutions.",
+      "title_3": "Problem-Solving Mindset",
+      "desc_3": "Thinking like a web developer by analyzing requirements, structuring logic, and building scalable, maintainable solutions.",
+      "title_4": "Effective Collaboration",
+      "desc_4": "An organized and respectful approach to teamwork, supported by clear communication and mutual understanding."
+    }
+  },
+
+  "contact": {
+    "success_msg":"Message sent seccesfully! I'll get back to you soon.",
+    "error_msg": "Failed to send message. Please try again later.",
+    "header_1" : "Get In Touch", 
+    "header_2" : "Lets build", 
+    "header_3" : " something great.", 
+    "header_p" : " Have a project or idea in mind? Feel free to get in touch - I’m open to learning, collaboration, and potential job opportunities.", 
+    "name" : "Name",
+    "y_name" : "Your name",
+    "email" : "Email",
+    "message": "Message",
+    "sending": "Sending...",
+    "send": "Send Message",
+    "info_title": "Contact Information",
+    "card_title" : "Currently Avaible",
+    "card_p" : "I’m currently open to new opportunities and learning-focused projects. Whether it’s a junior role, internship, or collaboration, feel free to get in touch.",
+
+
+
+    "info":{
+        
+        "label_1": "Email",
+        "label_2": "Phone",
+        "label_3" : "Location"
+    }
+  },
+  "exp" : {
+    "period_1" : "Apr 2025 – Jun 2025",
+    "role_1" :"Coding Instructor Intern",
+    "company_1":"Kodarit, Koodikaverit Oy",
+    "desc_1": " Completed an internship teaching children coding using Unity, Scratch, JavaScript, and Python. Assisted learners with programming tasks and gained practical experience in programming education and age-appropriate instruction.",
+       
+
+    "period_2" : "Apr 2023 – Jun 2023",
+    "role_2" :"Programming Intern",
+    "company_2": "Diginikkari, Business Asema, Oulu",
+    "desc_2": "Completed a practical internship introducing the Python programming language through various programming exercises. Gained experience in 3D printing and laser cutting, combining software skills with hands-on digital fabrication techniques.",
+
+    "period_3" : "Mar 2018 – Apr 2019",
+    "role_3" :"Patent Infringement Legal Advisor",
+    "company_3": "Yalciner Patent, Turkey",
+    "desc_3": "Provided legal advice and guidance on patent infringement investigations. Core competencies included strong knowledge of legislation and legal substance, leadership skills, analytical thinking, motivating and inspiring others, and demonstrating high-level initiative and creativity in challenging legal cases.",
+
+
+    "period_4" : "Jul 2016 – Feb 2017",
+    "role_4" :"Investigating Judge",
+    "company_4":"4th Civil Law Chamber of the Supreme Court, Turkey",
+    "desc_4": "Investigated civil law compensation cases involving physical and psychological injuries, conducted interviews, analyzed judicial data systems, and prepared recommendations for the higher court. Developed strong analytical, problem-solving, time management, and communication skills.", 
+
+     "period_5" : "Mar 2015 – Jul 2016",
+     "role_5" :"Judge",
+     "company_5":  "Hendek Court, Turkey",
+     "desc_5": "Served as a civil law judge handling compensation, divorce, real estate, and debt cases. Reviewed legal documents, prepared written justifications, issued decisions, and communicated rulings to involved parties, developing strong analytical, problem-solving, time management, and interpersonal skills.", 
+
+    "period_6" : "Nov 2013 – Mar 2015",
+    "role_6" :"Judicial Trainee",
+    "company_6":"Ankara Court, Turkey",
+    "desc_6": "Completed a judicial traineeship covering criminal and civil law, gaining broad practical experience in court operations across varied shifts, while developing strong analytical, organizational, communication, and attention-to-detail skills..",
+
+    "period_7" : "Aug 2012 - Nov 2013",
+    "role_7" :"Research Assistant",
+    "company_7": "Afyon Kocatepe University, Faculty of Law, Turkey",
+    "desc_7": "Assisted legal researchers with statistical, qualitative, and quantitative analyses, managing and visualizing research data for academic publications while developing strong research, analytical, and legislative knowledge skills.",
+
+    "header_1": "Career Journey",
+    "header_2": "Experience that",
+    "header_3": "peaks volumes. ",
+    "header_p": "A timeline of my interdisciplinary professional journey, combining law and software development."
+
+
+  }
+
+}

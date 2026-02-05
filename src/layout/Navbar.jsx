@@ -6,6 +6,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from "react";
 import { ThemeContext } from "@/Context"; 
 import { useTranslation } from "react-i18next";
+import Backend from 'i18next-http-backend'
 
 
 
@@ -14,15 +15,25 @@ import { useTranslation } from "react-i18next";
 
 
 
-const navLinks=[
-    {href: "#about", label: "About"},
-    {href: "#projects", label: "Projects"},
-    {href: "#experience", label: "Experience"},
+
+export const Navbar = ()=>{
+    
+    const {t, i18n}= useTranslation();
+    const navLinks=[
+    {href: "#about", label: t('navbar.about') },
+    {href: "#projects", label: t('navbar.projects')},
+    {href: "#experience", label: t('navbar.experience')},
     
 
 ];
-export const Navbar = ()=>{
-    const {t, i18n}= useTranslation()
+
+const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+            .then(() => {
+                console.log("Dil başarıyla değiştirildi:", lang);
+            })
+            .catch((err) => console.error("Dil değiştirme hatası:", err));
+    };
     const clickHandle = lang => {
         i18n.changeLanguage(lang)
     }
@@ -58,8 +69,9 @@ export const Navbar = ()=>{
             {/*LANGUAGE BUTTONS*/}
             < Button onClick={()=> clickHandle ('en') }>ENGLIISH</Button>
             <Button onClick={()=> clickHandle ('fi') }>SUOMI</Button>
+            <Button onClick={()=> clickHandle ('tr') }>TURKCE</Button>
             <p>aktif dil: {i18n.language}</p>
-            <h3>{t('welcome')}</h3>
+            
 
         
             <div>
@@ -97,7 +109,7 @@ export const Navbar = ()=>{
                         <input type="text" 
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        placeholder="Search..."
+                        placeholder= {t('navbar.search')}
                         className=" opacity-0 group-hover:opacity-100 bg-transparent border-b border-(--color-primary) focus:outline-none w-16 lg:w-24 transition duration-500 " />
                         <button type="submit" 
                         aria-label="search-button"
@@ -121,7 +133,7 @@ export const Navbar = ()=>{
             document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'});
         }}
         >
-        Contact Me
+        {t('navbar.contact_me')}
         </Button>
         </div>
 

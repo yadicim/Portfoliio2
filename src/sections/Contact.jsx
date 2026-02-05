@@ -4,36 +4,17 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser"
 import { useContext } from "react";
 import { ThemeContext } from "@/Context"; 
+import { useTranslation } from 'react-i18next';
 
-const contactInfo = [
-    {
-        icon:Mail,
-        label:"Email",
-        value:"yadigar.benli@gmail.com",
-        href:"mailto:yadigar.benli@gmail.com",
-    },
 
-     {
-        icon:Phone,
-        label:"Phone",
-        value:"+358 46 593 31 54",
-        href:"tel:+358465933154",
-    },
-
-    {
-        icon:MapPin,
-        label:"Location",
-        value:"Oulu/Finland",
-        href:"#"
-    },
-
-    
-];
 
 
 export const Contact = ()=>{
+    const { t } = useTranslation();
     const theme = useContext(ThemeContext);
     const isLight = !theme.state.lightMode;
+
+
     const [formData, setFormData] = useState({
         name:"",
         email:"",
@@ -41,10 +22,34 @@ export const Contact = ()=>{
     });
 
     const [isLoading, setIsLoading] = useState(false);
-    const [submitStatus, setSubsmitStatus] = useState ({
+    const [submitStatus, setSubmitStatus] = useState ({
         type: null,
         message: "",
     });
+    const contactInfo = [
+    {
+        icon:Mail,
+        label:"contact.info.label_1",
+        value:"yadigar.benli@gmail.com",
+        href:"mailto:yadigar.benli@gmail.com",
+    },
+
+     {
+        icon:Phone,
+        label:"contact.info.label_2",
+        value:"+358 46 593 31 54",
+        href:"tel:+358465933154",
+    },
+
+    {
+        icon:MapPin,
+        label:"contact.info.label_3",
+        value:"Oulu/Finland",
+        href:"#"
+    },
+
+    
+    ];
 
     const handleSubmit = async(e) => {
         e.preventDefault();
@@ -70,7 +75,7 @@ export const Contact = ()=>{
 
             setSubsmitStatus({
                 type: "success",
-                message:"Message sent seccesfully! I'll get back to you soon.",
+                message:t('contact.success_msg'),
             });
             setFormData ({ name: "", email: "", message: ""});          
 
@@ -80,13 +85,15 @@ export const Contact = ()=>{
             setSubsmitStatus({
                 type: "error",
                 message: 
-                error.text || "Failed to send message. Please try again later.",
+                error.text || t('contact.error_msg'),
             });
 
         } finally {
             setIsLoading(false)
         }
     };
+
+    
     return (
 
     <section id="contact"
@@ -102,17 +109,13 @@ export const Contact = ()=>{
 
                 {/*HEADER SECTION*/}
                 <div className=" text-center mx-auto max-w-3xl mb-16">
-                    <span className=" text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase animate-fade-in ">Get In Touch</span>
+                    <span className=" text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase animate-fade-in "> {t('contact.header_1')} </span>
                     <h2 className=" text-(--color-opposite) text-3xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">
-                    Lets build
-                    <span className="font-serif italic font-normal text-white">  something great.
+                    {t('contact.header_2')}
+                    <span className="font-serif italic font-normal text-white"> {t('contact.header_3')}
                     </span>
                     </h2>
-                    <p className="text-(--color-muted-foreground) animate-fade-in animation-delay-200">
-                    Have a project or idea in mind? Feel free to get in touch 
-                    — I’m open to learning, collaboration, and potential job opportunities.
-
-                    </p>
+                    <p className="text-(--color-muted-foreground) animate-fade-in animation-delay-200">{t('contact.header_p')}</p>
 
                 </div>
                 
@@ -120,10 +123,10 @@ export const Contact = ()=>{
                     <div className="glass p-6 md:p-6 rounded-3xl border border-(--color-primary)/30 animate-fade-in animation-delay-300">
                         <form className=" space-y-6 " onSubmit={handleSubmit} >
                             <div >
-                                <label htmlFor="name" className=" block text-sm font-medium mb-2 " >Name</label>
+                                <label htmlFor="name" className=" block text-sm font-medium mb-2 " > {t('contact.name')} </label>
                                 <input id="name" type="text" 
                                 required
-                                placeholder="Your name"
+                                placeholder={t('contact.y_name')}
                                 value={formData.name}
                                 onChange={(e) =>
                                     setFormData({...formData, name: e.target.value})
@@ -133,10 +136,10 @@ export const Contact = ()=>{
                             </div>
 
                              <div>
-                                <label htmlFor="email" className=" block text-sm font-medium mn-2">Email</label>
+                                <label htmlFor="email" className=" block text-sm font-medium mb-2"> {t('contact.email')} </label>
                                 <input id="email" type="email" 
                                 required
-                                placeholder="your@email.com"
+                                placeholder="mail@email.com"
                                 value={formData.email}
                                 onChange={(e) =>
                                     setFormData({...formData, email: e.target.value})
@@ -146,7 +149,7 @@ export const Contact = ()=>{
                             </div>
 
                              <div>
-                                <label htmlFor="message" className=" block text-sm font-medium mb-2">Message</label>
+                                <label htmlFor="message" className=" block text-sm font-medium mb-2">{t('contact.message')}</label>
                                 <textarea id="message" rows={4}
                                 required                                
                                 value={formData.message}
@@ -160,10 +163,10 @@ export const Contact = ()=>{
                             <Button className=" w-full text-black" type="submit" disabled={isLoading} >
                                { isLoading ? (
 
-                                 <>Sending...</>
+                                 <>{t('contact.sending')}</>
 
                                ) : (
-                                <> Send Message
+                                <> {t('contact.send')}
                                 <Send className=" w-5 h-5" /> 
                                 </>
                                 )
@@ -194,7 +197,7 @@ export const Contact = ()=>{
                     <div className=" space-y-6 animate-fade-in animation-delay-400">
                         <div className="glass rounded-3xl p-6 md:p-8">
                             <h3 className=" text-xl font-semibold mb-6">
-                                Contact Information
+                                {t('contact.info_title')}
                             </h3>
                             <div className=" space-y-4">
                                 {contactInfo.map((item,i)=>(
@@ -208,10 +211,10 @@ export const Contact = ()=>{
                                     </div>
                                     <div>
                                         <div className={` ${isLight ? "text-white" : "text-(--color-muted-foreground)" }`}>
-                                            {item.label}
+                                            {t(item.label)}
 
                                         </div>
-                                        <div className=" font-medium">{item.value}</div>
+                                        <div className=" font-medium"> {item.value} </div>
                                     </div>
                                     </a>
                                 ))}
@@ -222,11 +225,10 @@ export const Contact = ()=>{
                         <div className=" glass rounded-3xl p-6 md:p-8 border border-(--color-opposite)/30">
                                 <div className="flex items-center gap-3 mb-4">
                                     <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
-                                    <span className=" font-medium"> Currently Avaible </span>
+                                    <span className=" font-medium"> {t('contact.card_title')} </span>
                                 </div>
-                                <p className={` ${isLight ? "text-white" : "text-(--color-muted-foreground)" }`}>
-                                    I’m currently open to new opportunities and learning-focused projects.
-                                     Whether it’s a junior role, internship, or collaboration, feel free to get in touch.
+                                <p className={` ${isLight ? "text-white" : "text-(--color-muted-foreground)" }`}> {t('contact.card_p')} 
+                                   
                                 </p>
                         </div>
                     </div>

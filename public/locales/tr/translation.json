@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "title_1": "Yazılım Geliştirme ",
+    "title_1_1": "Öğrencisi",
+    "title_2": "Netlikle ",
+    "title_2_2": "Kodla.",
+    "title_3": "Hassasiyetle",
+    "title_4": "İnşa Et.",
+    "description": "Merhaba, ben Yadigar. Netlik, hassasiyet ve sürekli öğrenmeye değer veren bir yazılım geliştirici adayıyım. HTML, CSS, JavaScript, React ve C# konularında deneyim sahibiyim; fikirleri basit ve etkili dijital deneyimlere dönüştürmekten keyif alıyorum.",
+    "contact_me": "İletişime Geç",
+    "download_cv": "CV İndir",
+    "follow_me": "Beni takip et:",
+    "available": "Çalışmaya Hazır",
+    "law": "Hukuk ve Yazılım Geliştirme Alanlarında",
+    "software": "Disiplinlerarası Geçmiş"
+  },
+  "navbar": {
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "experience": "Deneyim",
+    "search": "Ara...",
+    "contact_me": "İletişime Geç"
+},
+"footer": {
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "experience": "Deneyim",
+    "contact": "İletişim",
+    "rights": " Yadigar Arslan. Tüm hakları saklıdır."
+},
+
+"about": {
+    "badge": "Hakkımda",
+    "title_main": "Hukuk ve Teknoloji arasında",
+    "title_highlight": "kod ile köprü kuruyorum.",
+    "p1": "Hukuk geçmişinden geliyorum ve şu anda analitik düşünme yeteneğimi teknik problem çözme becerileriyle birleştirdiğim yazılım geliştirme alanına geçiş yapıyorum. Programlamaya olan ilgim, dijital sistemlerin nasıl kurulduğunu ve mantığın nasıl gerçek, kullanılabilir ürünlere dönüştüğünü anlama arzusundan doğdu.",
+    "p2": "HTML, CSS, JavaScript, React, Bootstrap, jQuery, C, Python, PHP ve SQL ile çalışma deneyimim var. Net, yapılandırılmış kod yazmaktan ve karmaşıklıktan ziyade gerçek ihtiyaçlara odaklanan, bakımı kolay ve pratik uygulamalar geliştirmekten keyif alıyorum.",
+    "p3": "Geliştirme dünyasının dışında, sürekli öğrenme, uygulamalı projeler ve teknik temelimi güçlendirmek için yazılım geliştirmenin farklı alanlarını keşfederek becerilerimi geliştirmeye odaklanıyorum.",
+    "quote": "Odağım, analitik düşünce ve detaylara gösterilen özenle şekillendirilmiş, iyi yapılandırılmış ve güvenilir dijital çözümler yaratmaktır.",
+    "highlights": {
+      "title_1": "Temiz ve Yapılandırılmış Kod",
+      "desc_1": "Mantıksal bir yapıyı takip eden, okunabilirliği artıran ve uzun vadeli sürdürülebilirliği destekleyen kodlar.",
+      "title_2": "Basit ve Etkili Çözümler",
+      "desc_2": "Karmaşık sorunları parçalara ayıran ve pratik, etkili çözümler bulan yapılandırılmış ve analitik bir yaklaşım.",
+      "title_3": "Problem Çözme Odaklılık",
+      "desc_3": "Gereksinimleri analiz ederek, mantığı yapılandırarak ve ölçeklenebilir, bakımı kolay çözümler sunarak bir web geliştiricisi gibi düşünmek.",
+      "title_4": "Etkili İşbirliği",
+      "desc_4": "Net iletişim ve karşılıklı anlayışla desteklenen, ekip çalışmasına düzenli ve saygılı bir yaklaşım."
+        }
+    },
+    "contact": {
+    "success_msg": "Mesajınız başarıyla gönderildi! En kısa sürede size döneceğim.",
+    "error_msg": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+    "header_1": "İletişime Geçin",
+    "header_2": "Birlikte harika işler",
+    "header_3": " çıkaralım.",
+    "header_p": "Aklınızda bir proje veya fikir mi var? Benimle iletişime geçmekten çekinmeyin; öğrenmeye, iş birliğine ve kariyer fırsatlarına her zaman açığım.",
+    "name": "İsim",
+    "y_name": "Adınız",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "sending": "Gönderiliyor...",
+    "send": "Mesaj Gönder",
+    "info_title": "İletişim Bilgileri",
+    "card_title": "Müsaitlik Durumu",
+    "card_p": "Şu an yeni fırsatlara ve öğrenme odaklı projelere açığım. Junior roller, staj imkanları veya ortak projeler için benimle dilediğiniz zaman iletişime geçebilirsiniz.",
+    "info": {
+        "label_1": "E-posta",
+        "label_2": "Telefon",
+        "label_3": "Konum"
+        }
+    },
+
+    "exp": {
+    "period_1": "Nis 2025 – Haz 2025",
+    "role_1": "Kodlama Eğitmeni Stajyeri",
+    "company_1": "Kodarit, Koodikaverit Oy",
+    "desc_1": "Unity, Scratch, JavaScript ve Python kullanarak çocuklara kodlama eğitimi verilen bir staj tamamladım. Öğrencilere programlama görevlerinde yardımcı olurken, yaşa uygun öğretim teknikleri konusunda pratik deneyim kazandım.",
+    
+    "period_2": "Nis 2023 – Haz 2023",
+    "role_2": "Programlama Stajyeri",
+    "company_2": "Diginikkari, BusinessAsema, Oulu",
+    "desc_2": "Çeşitli egzersizlerle Python programlama diline giriş yapılan bir stajı tamamladım. Yazılım becerilerini uygulamalı dijital üretim teknikleriyle birleştirerek 3D yazıcılar ve lazer kesim konularında deneyim kazandım.",
+    
+    "period_3": "Mar 2018 – Nis 2019",
+    "role_3": "Patent İhlali Hukuk Danışmanı",
+    "company_3": "Yalciner Patent, Türkiye",
+    "desc_3": "Patent ihlali incelemelerinde hukuki danışmanlık sağladım. Mevzuat bilgisi, analitik düşünme, liderlik ve zorlu hukuki vakalarda yaratıcı çözüm üretme konularında yetkinliklerimi geliştirdim.",
+    
+    "period_4": "Tem 2016 – Şub 2017",
+    "role_4": "Tetkik Hakimi",
+    "company_4": "Yargıtay 4. Hukuk Dairesi, Türkiye",
+    "desc_4": "Tazminat davalarını inceleyerek yargı verilerini analiz ettim ve yüksek mahkeme heyetine sunulmak üzere karar taslakları hazırladım. Güçlü analitik düşünme ve zaman yönetimi becerileri edindim.",
+    
+    "period_5": "Mar 2015 – Tem 2016",
+    "role_5": "Hakim",
+    "company_5": "Hendek Adliyesi, Türkiye",
+    "desc_5": "Tazminat, boşanma, gayrimenkul ve borçlar hukuku alanlarında hakim olarak görev yaptım. Dosya inceleme, gerekçeli karar yazımı ve hukuki süreç yönetimi konularında profesyonel yetkinlik kazandım.",
+    
+    "period_6": "Kas 2013 – Mar 2015",
+    "role_6": "Hakim Adayı",
+    "company_6": "Ankara Adliyesi, Türkiye",
+    "desc_6": "Ceza ve hukuk mahkemelerinde mahkeme işleyişini kapsayan staj dönemimi tamamladım. Organizasyon, iletişim ve detaylara odaklanma konularında geniş bir uygulama deneyimi edindim.",
+    
+    "period_7": "Ağu 2012 - Kas 2013",
+    "role_7": "Araştırma Görevlisi",
+    "company_7": "Afyon Kocatepe Üniversitesi, Hukuk Fakültesi, Türkiye",
+    "desc_7": "Akademik araştırmalarda istatistiksel, nitel ve nicel analizlere yardımcı oldum; araştırma verilerinin yönetimi ve akademik yayınlar için görselleştirilmesi süreçlerini yürüttüm.",
+
+    "header_1": "Kariyer Yolculuğu",
+    "header_2": "Zengin Bir",
+    "header_3": "Mesleki Geçmiş.",
+    "header_p": "Hukuk ve yazılım geliştirmeyi bir araya getiren disiplinler arası profesyonel yolculuğumun özeti."
+    }
+}
+
+
+

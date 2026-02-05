@@ -4,6 +4,7 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { useContext } from "react";
 import { ThemeContext } from "@/Context"; 
 import { text } from "@fortawesome/fontawesome-svg-core";
+import { useTranslation } from 'react-i18next';
 const skills =[
     "React",
     "Python",
@@ -19,6 +20,7 @@ const skills =[
 export const Hero = ()=>{
     const theme = useContext(ThemeContext);
     const isLight = !theme.state.lightMode;
+    const { t } = useTranslation();
 
     return ( <section className="relative min-h-screen flex items-center overflow-hidden">
         {/*Background*/}
@@ -81,29 +83,26 @@ export const Hero = ()=>{
             <div className=" space-y-8">
                 <div className=" ml-0 md:ml-12 animate-fade-in animate-delay-100">
                     <span className=" inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-(--color-primary) ">
-                        <span className=" w-2 h-2 bg-(--color-primary) rounded-full animate-pulse " /> Software Developer <span className= {` rotate-30 ${isLight ? "text-black" : "text-(--color-muted-foreground)" }`}>Student</span> 
+                        <span className=" w-2 h-2 bg-(--color-primary) rounded-full animate-pulse " /> {t('hero.title_1')} <span className= {` rotate-30 ${isLight ? "text-black" : "text-(--color-muted-foreground)" }`}> {t('hero.title_1_1')} </span> 
                     </span>
                 </div>
                 {/*HEADLINE*/}
                 <div className="ml-0 md:ml-12 space-y-4">
-                    <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animate-delay-300">
-                        Code with <span className="text-(--color-opposite) glow-text">Clarity.</span>
+                    <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animate-delay-300"> {t('hero.title_2')} <span className="text-(--color-opposite) glow-text"> {t('hero.title_2_2')} </span>
                         <br/>
-                        Build with
+                        {t('hero.title_3')} 
                         <br/>
-                        <span className=" text-(--color-primary) font-serif italic font-normal">Precision. </span>  
+                        <span className=" text-(--color-primary) font-serif italic font-normal"> {t('hero.title_4')}  </span>  
                     </h1>
 
                     <p className={`text-lg  max-w-lg animate-fade-in animate-delay-600 ${isLight ? "text-black" : "text-(--color-muted-foreground)" }`} >
-                        Hi, I'm Yadigar, a software developer in training who values clarity, 
-                        precision, and continuous learning. I have experience with HTML, CSS, JavaScript, React
-                         and C#, and I enjoy turning ideas into simple and effective digital experiences.
+                        {t('hero.description')}
                     </p>
                 </div>
                 {/*ACTION*/}
                 <div className=" ml-0 md:ml-12 flex flex-wrap gap-4 animate-fade-in animation-delay-300 ">
                     < a href="#contact" >
-                    <Button className=" text-black" > Contact Me <ArrowRight className="w-5  h-5  text-black" />
+                    <Button className=" text-black" > {t('hero.contact_me')} <ArrowRight className="w-5  h-5  text-black" />
 
                     </Button>
                     </a>
@@ -116,14 +115,14 @@ export const Hero = ()=>{
                     >
                         <AnimatedBorderButton>
                         < Download className=" w-5 h-5 " />
-                            Download CV
+                            {t('hero.download_cv')}
                     </AnimatedBorderButton>
                     </a>
                 </div>
 
                 {/*SOCIAL LINKS */}
                 <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                    <span className="ml-0 md:ml-12 text-sm  text-(--color-muted-foreground)  ">Follow me: </span>
+                    <span className="ml-0 md:ml-12 text-sm  text-(--color-muted-foreground)  ">{t('hero.follow_me')} </span>
                     {[
                         { icon: Github, href: "https://github.com/yadicim"},
                         { icon: Linkedin, href: "https://www.linkedin.com/in/yadigara/"},
@@ -159,7 +158,7 @@ export const Hero = ()=>{
                         <div className="flex items-center gap-3">
                             <div className="w-3 h-3 bg-(--color-primary) rounded-full animate-pulse" ></div>
                             <span className=" text-sm font-medium ">
-                                    Avaible for Work
+                                    {t('hero.available')}
 
                             </span>
                             
@@ -168,8 +167,8 @@ export const Hero = ()=>{
                         {/*STATS BADGE */}
                         <div className="hidden md:block absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500 ">
                             <div>
-                                <div className="text-md text-(--color-opposite)  ">Interdisciplinary Background in Law and</div>
-                                <div className=" text-2xl font-bold text-(--color-primary)">  Software Development</div>
+                                <div className="text-md text-(--color-opposite)  ">{t('hero.law')} </div>
+                                <div className=" text-2xl font-bold text-(--color-primary)">  {t('hero.software')}</div>
 
                             </div>
 

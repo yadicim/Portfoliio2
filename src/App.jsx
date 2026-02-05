@@ -9,6 +9,7 @@ import { Footer } from "@/layout/Footer";
 import  Toggle  from "@/components/Toggle"; 
 import { ThemeContext } from "@/Context";
 import { useTranslation } from "react-i18next";
+import Backend from 'i18next-http-backend'
 
 function App() { 
   const {t, i18n}= useTranslation()

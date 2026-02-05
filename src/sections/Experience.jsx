@@ -1,75 +1,78 @@
 import { useContext } from "react";
 import { ThemeContext } from "@/Context"; 
+import { useTranslation } from 'react-i18next';
 
-const experiences = [
+
+
+    export const Experience = () => {
+        const { t } = useTranslation();
+        const theme = useContext(ThemeContext);
+        const isLight = !theme.state.lightMode;
+
+
+        const experiences = [
 
     {
-        period: "Apr 2025 – Jun 2025",
-        role: "Coding Instructor Intern",
-        company: "Kodarit, Koodikaverit Oy",
-        description:
-        " Completed an internship teaching children coding using Unity, Scratch, JavaScript, and Python. Assisted learners with programming tasks and gained practical experience in programming education and age-appropriate instruction.",
+        period: "exp.period_1",
+        role: "exp.role_1",
+        company: "exp.company_1",
+        description: "exp.desc_1",
+       
        
     },
 
     {
-        period: "Apr 2023 – Jun 2023",
-        role: "Programming Intern",
-        company: "Diginikkari, Business Asema, Oulu",
-        description:
-            "Completed a practical internship introducing the Python programming language through various programming exercises. Gained experience in 3D printing and laser cutting, combining software skills with hands-on digital fabrication techniques.",
+        period: "exp.period_2",
+        role: "exp.role_2",
+        company: "exp.company_2",
+        description:"exp.desc_2",
+           
         
     },
 
 
     {
-        period: "Mar 2018 – Apr 2019",
-        role: "Patent Infringement Legal Advisor",
-        company: "Yalciner Patent, Turkey",
-        description:
-            "Provided legal advice and guidance on patent infringement investigations. Core competencies included strong knowledge of legislation and legal substance, leadership skills, analytical thinking, motivating and inspiring others, and demonstrating high-level initiative and creativity in challenging legal cases.",
-        
+        period: "exp.period_3",
+        role: "exp.role_3",
+        company: "exp.company_3",
+        description: "exp.desc_3",
+            
     },
 
     {
-        period: "Jul 2016 – Feb 2017",
-        role: "Investigating Judge",
-        company: "4th Civil Law Chamber of the Supreme Court, Turkey",
-        description:
-            "Investigated civil law compensation cases involving physical and psychological injuries, conducted interviews, analyzed judicial data systems, and prepared recommendations for the higher court. Developed strong analytical, problem-solving, time management, and communication skills.",
+        period: "exp.period_4",
+        role: "exp.role_4",
+        company: "exp.company_4",
+        description: "exp.desc_4",
+            
       
     },
     {
-        period: "Mar 2015 – Jul 2016",
-        role: "Judge",
-        company: "Hendek Court, Turkey",
-        description:
-            "Served as a civil law judge handling compensation, divorce, real estate, and debt cases. Reviewed legal documents, prepared written justifications, issued decisions, and communicated rulings to involved parties, developing strong analytical, problem-solving, time management, and interpersonal skills.",
+        period: "exp.period_5",
+        role: "exp.role_5",
+        company: "exp.company_5",
+        description:"exp.desc_5",
+           
         
     },
 
     {
-        period: "Nov 2013 – Mar 2015",
-        role: "Judicial Trainee",
-        company: "Ankara Court, Turkey",
-        description:
-            "Completed a judicial traineeship covering criminal and civil law, gaining broad practical experience in court operations across varied shifts, while developing strong analytical, organizational, communication, and attention-to-detail skills..",
-       
+        period: "exp.period_6",
+        role: "exp.role_6",
+        company: "exp.company_6",
+        description: "exp.desc_6",
+            
     },
     {
-        period: "Aug 2012 - Nov 2013",
-        role: "Research Assistant",
-        company: "Afyon Kocatepe University, Faculty of Law, Turkey",
-        description:
-            "Assisted legal researchers with statistical, qualitative, and quantitative analyses, managing and visualizing research data for academic publications while developing strong research, analytical, and legislative knowledge skills.",
+        period: "exp.period_7",
+        role:"exp.role_7",
+        company: "exp.company_7",
+        description:"exp.desc_7",
+           
        
     },
     
     ];
-
-    export const Experience = () => {
-        const theme = useContext(ThemeContext);
-        const isLight = !theme.state.lightMode;
          return (
              <section
              id="experience"
@@ -82,12 +85,12 @@ const experiences = [
                 <div className=" container mx-auto px-6 relative z-10">
                     {/*SECTION HEADER*/}
                     <div className=" max-w-3xl mb-16">
-                        <span className="text-(--color-primary) text-sm font-medium tracking-wider uppercase animate-fade-in "> Career Journey</span>
+                        <span className="text-(--color-primary) text-sm font-medium tracking-wider uppercase animate-fade-in "> {t('exp.header_1')} </span>
                         <h2 className=" text-(--color-opposite) text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">
-                            Experience that<span className="font-serif italic font-normal text-white"> speaks volumes. </span>
+                             {t('exp.header_2')}<span className="font-serif italic font-normal text-white"> {t('exp.header_3')} </span>
                         </h2>
                         <p className="text-(--color-muted-foreground) animate-fade-in animation-delay-200">
-                            A timeline of my interdisciplinary professional journey, combining law and software development.
+                             {t('exp.header_p')}
                         </p>
 
                     </div>
@@ -108,16 +111,16 @@ const experiences = [
 
                                     </div>
 
-                                    {/*CONTENT*/}
+                                    {/*CONTENT*/} 
                                     <div className={`pl-8 md:pl-0 ${idx % 2 === 0 
                                         ? "md:pr-16 md:text-right"
                                         : " md:col-start-2 md:pl-16"
                                         }`}>
                                         <div className={` glass p-6 rounded-2xl border border-(--color-opposite)/40 hover:border-(--color-opposite)/80 transition-all duration-500`}>
-                                            <span className=" text-sm text-(--color-primary) font-medium">{exp.period}</span>
-                                            <h3 className=" text-xl font-bold mt-2">{exp.role}</h3>
-                                            <p className={` ${isLight ? "text-white" : "text-(--color-muted-foreground)" }`}>{exp.company}</p>
-                                            <p className={` text-sm ${isLight ? "text-black" : "text-(--color-muted-foreground)" }`}>{exp.description}</p>
+                                            <span className=" text-sm text-(--color-primary) font-medium"> {t(exp.period)} </span>
+                                            <h3 className=" text-xl font-bold mt-2">{t(exp.role)} </h3>
+                                            <p className={` ${isLight ? "text-white" : "text-(--color-muted-foreground)" }`}>{t(exp.company)} </p>
+                                            <p className={` text-sm ${isLight ? "text-black" : "text-(--color-muted-foreground)" }`}>{t(exp.description)} </p>
 
                                         </div>
 
