@@ -44,9 +44,9 @@ const changeLanguage = (lang) => {
     const theme = useContext(ThemeContext);
     const isLight = !theme.state.lightMode;
     const languages = [
-  { code: 'en', label: 'English', flag: 'https://flagcdn.com/w40/gb.png' },
-  { code: 'fi', label: 'Suomi', flag: 'https://flagcdn.com/w40/fi.png' },
-  { code: 'tr', label: 'Türkçe', flag: 'https://flagcdn.com/w40/tr.png' },
+  { code: 'en', label: 'En', flag: 'https://flagcdn.com/w40/gb.png' },
+  { code: 'fi', label: 'Fi', flag: 'https://flagcdn.com/w40/fi.png' },
+  { code: 'tr', label: 'Tr', flag: 'https://flagcdn.com/w40/tr.png' },
 ];
 
     useEffect(()=> {
